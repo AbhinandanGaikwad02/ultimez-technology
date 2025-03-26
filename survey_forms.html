@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <center>
+    <h2>Survey Form</h2>
+    <form>
+        <!-- Multiple-choice question -->
+        <p>How did you hear about us?</p>
+        <input type="radio" id="social_media" name="source" value="social_media">
+        <label for="social_media">Social Media</label><br>
+        
+        <input type="radio" id="friends" name="source" value="friends">
+        <label for="friends">Friends/Family</label><br>
+        
+        <input type="radio" id="ads" name="source" value="ads">
+        <label for="ads">Online Ads</label><br><br>
+
+        <!-- Checkboxes -->
+        <p>Which of our services do you use?</p>
+        <input type="checkbox" id="web_dev" name="services" value="web_dev">
+        <label for="web_dev">Web Development</label><br>
+        
+        <input type="checkbox" id="seo" name="services" value="seo">
+        <label for="seo">SEO Optimization</label><br>
+        
+        <input type="checkbox" id="marketing" name="services" value="marketing">
+        <label for="marketing">Digital Marketing</label><br><br>
+
+        <!-- Short text input -->
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Textarea -->
+        <label for="suggestions">Any suggestions for improvement?</label><br>
+        <textarea id="suggestions" name="suggestions"></textarea><br><br>
+
+        <!-- Rating scale -->
+        <label for="rating">Rate our service (1-5):</label>
+        <select id="rating" name="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select><br><br>
+
+        <!-- Dropdown -->
+        <label for="country">Your Country:</label>
+        <select id="country" name="country">
+            <option value="">Select</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="india">India</option>
+            <option value="canada">Canada</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</center>
+</body>
+</html>
