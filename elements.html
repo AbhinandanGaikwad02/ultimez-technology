@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Elements Demo</title>
+    <title>HTML Attributes Demo</title>
+    <style>
+        .highlight { color: blue; font-weight: bold; }
+        .container { padding: 10px; border: 1px solid #ccc; }
+    </style>
 </head>
 <body>
 
-    <h1>Welcome to My Page</h1>
-    <h2>About This Demo</h2>
-    <h3>Understanding Basic HTML Elements</h3>
+    <h1 id="main-heading">Welcome to My Page</h1>
+    <h2 class="highlight">About This Demo</h2>
+    <h3 title="HTML Basics">Understanding Basic HTML Elements</h3>
 
-    <p>This is a simple paragraph explaining how different HTML elements work. Writing content inside `<p>` tags makes it easier to read.</p>
+    <p id="description">This is a simple paragraph explaining how different HTML elements work. Writing content inside `<p>` tags makes it easier to read.</p>
 
-    <p>Need more info? Check out <a href="https://ultimez.com">ultimez website</a> for details.</p>
+    <p>Need more info? Check out <a href="https://ultimez.com" title="Visit Ultimez">Ultimez website</a> for details.</p>
 
     <p>Here’s a sample image:</p>
-    <img src="./bmw.jpg" alt="bmw" width="150" height="100">
+    <img src="./bmw.jpg" alt="BMW Car" width="200" height="150" title="BMW Image">
 
-    <div>
+    <div class="container">
         <h4>A Section Inside a Div</h4>
-        <p>This content is wrapped inside a div to keep it structured.</p>
+        <p class="highlight">This content is wrapped inside a div to keep it structured.</p>
     </div>
 
     <p>First line.<br>Oops! A line break just happened.<br>Here’s another line.</p>
